@@ -1,0 +1,12 @@
+- name: creat group 
+  ansible.builtin.user:
+    group: admin
+    state: present 
+
+- name: creat user 
+  ansible.builtin.user:
+    name: tomcat
+    shell: /bin/false
+    groups: developers
+    directory: /opt/tomcat
+    

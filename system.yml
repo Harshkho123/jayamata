@@ -1,0 +1,12 @@
+- name: daemon reload
+  ansible.builtin.systemd:
+    name: systemctl
+    daemon_reload: yes
+
+
+- name: start tomcat 
+  ansible.builtin.systemd:
+    name: systemctl 
+    state: started
+    enabled: yes
+    

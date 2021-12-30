@@ -1,0 +1,7 @@
+--- 
+
+- include_tasks: update.yml
+- include_tasks: installjava.yml
+- include_tasks: grpuse.yml
+- include_tasks: installtom.yml
+
